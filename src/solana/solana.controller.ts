@@ -16,6 +16,8 @@ export class SolanaController {
     }
 
     // Endpoint to get SOL balance for a public key
+    @ApiOperation({ summary: 'Get SOL balance of a public key' })
+    @ApiParam({ name: 'publicKey', description: 'Public key of the account' })
     @Get('balance/:publicKey')
     async getBalance(@Param('publicKey') publicKey: string) {
         const balance = await this.solanaService.getBalance(publicKey);
