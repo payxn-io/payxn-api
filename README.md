@@ -3,7 +3,7 @@
 To use a backend Payxn API app using NestJS and Solana web3.js, you can follow these steps to integrate Solana blockchain functionality within a NestJS application. This guide assumes you are familiar with both NestJS and the basics of Solana development.
 
 <p align="center">
-  <a href="https://payxn.xyz/" target="blank"><img src="[https://nestjs.com/img/logo-small.svg](https://payxn.xyz/public/backend/images/web-settings/image-assets/9fd0f710-e0f2-4507-80fd-537e181f5689.webp)" width="120" alt="Payxn Logo" /></a>
+  <a href="https://payxn.xyz/" target="blank"><img src="[https://payxn.xyz/public/backend/images/web-settings/image-assets/payxn-logo.png](https://payxn.xyz/public/backend/images/web-settings/image-assets/payxn-logo.png)" width="120" alt="Payxn Logo" /></a>
 </p>
 
 [circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
