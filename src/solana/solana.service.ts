@@ -8,5 +8,14 @@ export class SolanaService {
     constructor() {
         // Establish a connection to the Solana devnet
         this.connection = new Connection(clusterApiUrl('devnet'), 'confirmed');
-      }
+    }
+
+    // Example: Create a Solana account
+    createAccount() {
+        const keypair = Keypair.generate();
+        return {
+        publicKey: keypair.publicKey.toString(),
+        secretKey: keypair.secretKey.toString(),
+        };
+    }
 }
