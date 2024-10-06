@@ -18,4 +18,11 @@ export class SolanaService {
         secretKey: keypair.secretKey.toString(),
         };
     }
+
+    // Example: Get SOL balance for a given public key
+    async getBalance(publicKeyString: string) {
+        const publicKey = new PublicKey(publicKeyString);
+        const balance = await this.connection.getBalance(publicKey);
+        return balance / LAMPORTS_PER_SOL; // Convert lamports to SOL
+    }
 }
