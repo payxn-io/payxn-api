@@ -13,6 +13,9 @@ async function bootstrap() {
     .addTag('solana')
     .build();
 
+  const document = SwaggerModule.createDocument(app, config);
+  SwaggerModule.setup('api', app, document);  // API docs at /api 
+
   await app.listen(3000);
 }
 bootstrap();
