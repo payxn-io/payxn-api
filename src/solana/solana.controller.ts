@@ -2,6 +2,7 @@ import { Controller, Get, Param, Post, Body } from '@nestjs/common';
 import { ApiTags, ApiOperation, ApiParam, ApiBody } from '@nestjs/swagger';
 import { SolanaService } from './solana.service';
 
+@ApiTags('solana') // Group the Solana APIs under one tag in Swagger
 @Controller('solana')
 export class SolanaController {
     constructor(private readonly solanaService: SolanaService) {}
