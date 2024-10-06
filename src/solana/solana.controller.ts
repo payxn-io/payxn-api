@@ -11,4 +11,11 @@ export class SolanaController {
         return this.solanaService.createAccount();
     }
 
+    // Endpoint to get SOL balance for a public key
+    @Get('balance/:publicKey')
+    async getBalance(@Param('publicKey') publicKey: string) {
+        const balance = await this.solanaService.getBalance(publicKey);
+        return { balance };
+    }
+
 }
