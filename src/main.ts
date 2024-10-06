@@ -7,8 +7,8 @@ async function bootstrap() {
 
   // Swagger setup
   const config = new DocumentBuilder()
-    .setTitle('Solana API')
-    .setDescription('API for interacting with the Solana blockchain')
+    .setTitle('Payxn Solana API')
+    .setDescription('API for interacting with the Payxn & Solana blockchain')
     .setVersion('1.0')
     .addTag('solana')
     .build();
