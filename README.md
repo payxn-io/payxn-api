@@ -1,5 +1,9 @@
+# Writing a Payxn Solana API using NestJS
+### Tips for using the backend API
+To use a backend Payxn API app using NestJS and Solana web3.js, you can follow these steps to integrate Solana blockchain functionality within a NestJS application. This guide assumes you are familiar with both NestJS and the basics of Solana development.
+
 <p align="center">
-  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="120" alt="Nest Logo" /></a>
+  <a href="https://payxn.xyz/" target="blank"><img src="[https://nestjs.com/img/logo-small.svg](https://payxn.xyz/public/backend/images/web-settings/image-assets/9fd0f710-e0f2-4507-80fd-537e181f5689.webp)" width="120" alt="Payxn Logo" /></a>
 </p>
 
 [circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
@@ -9,54 +13,50 @@
     <p align="center">
 <a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
 <a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/dm/@nestjs/common.svg" alt="NPM Downloads" /></a>
-<a href="https://circleci.com/gh/nestjs/nest" target="_blank"><img src="https://img.shields.io/circleci/build/github/nestjs/nest/master" alt="CircleCI" /></a>
-<a href="https://coveralls.io/github/nestjs/nest?branch=master" target="_blank"><img src="https://coveralls.io/repos/github/nestjs/nest/badge.svg?branch=master#9" alt="Coverage" /></a>
-<a href="https://discord.gg/G7Qnnhy" target="_blank"><img src="https://img.shields.io/badge/discord-online-brightgreen.svg" alt="Discord"/></a>
-<a href="https://opencollective.com/nest#backer" target="_blank"><img src="https://opencollective.com/nest/backers/badge.svg" alt="Backers on Open Collective" /></a>
-<a href="https://opencollective.com/nest#sponsor" target="_blank"><img src="https://opencollective.com/nest/sponsors/badge.svg" alt="Sponsors on Open Collective" /></a>
-  <a href="https://paypal.me/kamilmysliwiec" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal-ff3f59.svg" alt="Donate us"/></a>
-    <a href="https://opencollective.com/nest#sponsor"  target="_blank"><img src="https://img.shields.io/badge/Support%20us-Open%20Collective-41B883.svg" alt="Support us"></a>
-  <a href="https://twitter.com/nestframework" target="_blank"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow" alt="Follow us on Twitter"></a>
+
+<a href="https://twitter.com/payxnsol" target="_blank"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow" alt="Follow us on Twitter"></a>
 </p>
   <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
   [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
 
+### Diagram of Payxn User Journey
+<img width="968" alt="Screenshot 2024-10-04 at 11 54 30 AM" src="https://github.com/user-attachments/assets/0826e1c9-c6b3-4d4f-bdf9-77db621dd65a">
+
+## Steps
+- [x] Install Dependencies
+- [x] Create a Solana Service
+- [x] Create a Controller
+- [x] Register the Solana Module
+- [x] Install Swagger Dependencies
+- [x] Configure Swagger in main.ts
+- [x] Add Swagger Decorators to the Controller
+- [x] Run the Application
+
 ## Description
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+Payxn is an abstracted virtual solana payment channel.
 
-## Project setup
-
-```bash
-$ npm install
-```
-
-## Compile and run the project
+## Getting Started
 
 ```bash
-# development
-$ npm run start
-
-# watch mode
-$ npm run start:dev
-
-# production mode
-$ npm run start:prod
+npm i -g @nestjs/cli
+nest new payxn-api
+npm install @solana/web3.js
 ```
 
-## Run tests
+## Create a solana service
 
 ```bash
-# unit tests
-$ npm run test
-
-# e2e tests
-$ npm run test:e2e
-
-# test coverage
-$ npm run test:cov
+nest generate module solana 
+nest generate service solana
 ```
+
+## Create a Controller
+
+```bash
+nest generate controller solana
+```
+
 
 ## Resources
 
@@ -76,9 +76,9 @@ Nest is an MIT-licensed open source project. It can grow thanks to the sponsors 
 
 ## Stay in touch
 
-- Author - [Kamil Myśliwiec](https://twitter.com/kammysliwiec)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
+- Author - [graver](https://twitter.com/payxnsol)
+- Website - [https://payxn.xyz](https://payxn.xyz/)
+
 
 ## License
 
