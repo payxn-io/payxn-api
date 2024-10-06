@@ -25,4 +25,12 @@ export class SolanaService {
         const balance = await this.connection.getBalance(publicKey);
         return balance / LAMPORTS_PER_SOL; // Convert lamports to SOL
     }
+
+    // Example: Airdrop SOL to a public key (for development purposes)
+    async airdropSol(publicKeyString: string, amountInSol: number) {
+        const publicKey = new PublicKey(publicKeyString);
+        const signature = await this.connection.requestAirdrop(publicKey, amountInSol * LAMPORTS_PER_SOL);
+        await this.connection.confirmTransaction(signature);
+        return signature;
+    }
 }
