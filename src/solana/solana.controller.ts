@@ -18,4 +18,11 @@ export class SolanaController {
         return { balance };
     }
 
+    // Endpoint to airdrop SOL (devnet only)
+    @Post('airdrop')
+    async airdropSol(@Body('publicKey') publicKey: string, @Body('amount') amount: number) {
+        const signature = await this.solanaService.airdropSol(publicKey, amount);
+        return { signature };
+    }
+
 }
