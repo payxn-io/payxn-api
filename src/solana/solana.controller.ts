@@ -7,7 +7,9 @@ import { SolanaService } from './solana.service';
 export class SolanaController {
     constructor(private readonly solanaService: SolanaService) {}
 
+    
     // Endpoint to create a new Solana account
+    @ApiOperation({ summary: 'Create a new Solana account' })
     @Get('create-account')
     createAccount() {
         return this.solanaService.createAccount();
