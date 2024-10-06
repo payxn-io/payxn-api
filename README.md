@@ -14,13 +14,12 @@ To use a backend Payxn API app using NestJS and Solana web3.js, you can follow t
     <p align="center">
 <a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
 <a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
-<a href="https://twitter.com/payxnsol" target="_blank"><img src="https://img.shields.io/twitter/follow/nestframework.svg" alt="Follow us on Twitter"></a>
+<a href="https://twitter.com/payxnsol" target="_blank"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow" alt="Follow us on Twitter"></a>
 </p>
   <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
   [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
 
-### Diagram of Payxn User Journey
-Sample API Interface
+### Sample API Interface
 <img width="1508" alt="Screenshot 2024-10-05 at 11 42 04 PM" src="https://github.com/user-attachments/assets/63740d75-8a71-4d72-aac6-a39d464feef6">
 
 
