@@ -25,6 +25,8 @@ export class SolanaController {
     }
 
     // Endpoint to airdrop SOL (devnet only)
+    @ApiOperation({ summary: 'Airdrop SOL to a public key' })
+    @ApiBody({ schema: { example: { publicKey: 'YourPublicKey', amount: 1 } } })
     @Post('airdrop')
     async airdropSol(@Body('publicKey') publicKey: string, @Body('amount') amount: number) {
         const signature = await this.solanaService.airdropSol(publicKey, amount);
